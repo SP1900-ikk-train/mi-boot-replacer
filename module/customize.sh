@@ -274,7 +274,7 @@ if [ -d "$BACKUP_DIR" ]; then
   done
 fi
 
-if [ "$backup_exists" = false ]; then
+if [[ "$BACKUP_EXISTS" == "false" ]]; then
   ui_print "- Do you want to backup your current boot animation?"
   ui_print "  Press the following keys to proceed:"
   ui_print "  Volume [+]: Backup (Highly recommended)"
